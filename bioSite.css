@@ -6,6 +6,7 @@ body{
   h1 {
     font-family: Oswald, sans-serif;
     font-weight: 700;
+    font-size: 4vw;
   }
   #navbar{
     overflow: hidden;
@@ -22,13 +23,17 @@ body{
     text-align: center;
     padding: 14px 16px;
     width: 29%;
-    font-size: 4em;
+    font-size: 4vw;
     transition: 0.5s;
   }
   #navbar a:hover{
-    font-size: 3em;
+    font-size: 3vw;
+  }
+  #navbar a.selected{
+    color: #e176f5;
   }
   #container{
+    text-align: center;
     margin-top: 2%;
     margin-left: 5%;
     margin-right: 5%;
@@ -49,23 +54,47 @@ body{
   }
   .grid2{
     display: grid;
-    grid-template-columns: 50% 50%;
+    grid-template-columns: 70%;
     font-size: 2em;
     padding-bottom: 40px;
     text-align: center;
+    padding-left: 20%;
   }
   .photo{
-    padding: 70px 0;
-  }
-  .phototext{
-    padding: 80px 0;
+    position: relative;
+    text-align: center;
+    width: 100%;
+    height: auto;
+    padding-bottom: 10%;
   }
   img {
-    width: 80%;
-    max-height: 60vh;
-    max-width: 60vh;
-    width: auto;
+    width: 100%;
     height: auto;
+    display: block;
+  }
+  .overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 88.25%;
+    width: 100%;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: #4b3d86;
+  }
+  .photo:hover .overlay{
+    opacity: 1;
+  }
+  .phototext {
+    color: white;
+    font-size: 3vw;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
   }
 footer{
     position: fixed;
