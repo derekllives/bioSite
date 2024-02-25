@@ -8,6 +8,10 @@ body{
     font-weight: 700;
     font-size: 4vw;
   }
+  h2{
+    font-family: Oswald, sans-serif;
+    font-size: 1.5vw;
+  }
   #navbar{
     overflow: hidden;
     background-color: #8d76f5;
@@ -46,6 +50,9 @@ body{
     padding-left: 20px;
     font-size: 1.5em;
     color: #4b3d86;
+  }
+  #main-bio p{
+    text-align: left;
   }
   .grid1{
     display: grid;
